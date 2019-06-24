@@ -8,6 +8,7 @@ public class DefaultProjectile : MonoBehaviour
     public float lifeTime;
     public ParticleSystem deathParticle;
     public int damage;
+    
 
     // Start is called before the first frame update
     void Start()

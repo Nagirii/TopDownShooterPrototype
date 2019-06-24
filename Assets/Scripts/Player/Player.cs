@@ -40,9 +40,14 @@ public class Player : MonoBehaviour
     }
 
     public void TakeDamage(int damage){
-        health =- damage;
+        health = health - damage;
         if(health<=0){
             Destroy(this.gameObject);
         }
+    }
+    public void ChangeWeapons(Weapon weaponToEquip){
+        Destroy(GameObject.FindGameObjectWithTag("Weapon"));
+        Instantiate(weaponToEquip, transform.position, transform.rotation, transform);
+
     }
 }
