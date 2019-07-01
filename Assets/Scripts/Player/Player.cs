@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class Player : MonoBehaviour
     private Vector2 moveAmount;
     public int health;
 
+    public Image[] hearts;
+    public Sprite fullHeart;
+    public Sprite emptyHeart;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +45,7 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(int damage){
         health = health - damage;
+        UpdateHealthUI(health);
         if(health<=0){
             Destroy(this.gameObject);
         }
@@ -49,5 +54,20 @@ public class Player : MonoBehaviour
         Destroy(GameObject.FindGameObjectWithTag("Weapon"));
         Instantiate(weaponToEquip, transform.position, transform.rotation, transform);
 
+    }
+
+    public void UpdateHealthUI(int currentHeatlh)
+    {
+        for (int i=0; i < hearts.Length; i++)
+        {
+            if (i < currentHeatlh)
+            {
+                hearts[i].sprite = fullHeart;
+            }
+            else
+            {
+                hearts[i].sprite = emptyHeart;
+            }
+        }
     }
 }
