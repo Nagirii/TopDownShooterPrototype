@@ -32,5 +32,9 @@ public class DefaultProjectile : MonoBehaviour
             collision.GetComponent<enemy>().TakeDamage(damage);
             DestroyProjectile();
         }
+        else if(collision.tag == "Wall")
+        {
+            DestroyProjectile();
+        }
     }
 }

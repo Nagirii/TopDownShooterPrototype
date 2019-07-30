@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4448155142134396929}
   - component: {fileID: 6969074811360721667}
   - component: {fileID: 1028413771510277422}
+  - component: {fileID: 8920632419980393317}
   m_Layer: 0
   m_Name: Adaga foda
   m_TagString: Untagged
@@ -114,3 +115,24 @@ CapsuleCollider2D:
   m_Offset: {x: -0.039105438, y: 0.069978334}
   m_Size: {x: 0.14191937, y: 0.41771597}
   m_Direction: 0
+--- !u!50 &8920632419980393317
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3671875835900787629}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
