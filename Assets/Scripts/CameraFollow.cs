@@ -5,6 +5,7 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
     public Transform playerTransform;
+    public Transform playerObject;
     public float speed;
 
     public float minX;
@@ -14,6 +15,12 @@ public class CameraFollow : MonoBehaviour
 
     private void Start()
     {
+       
+        if (playerTransform == null)
+        {
+            playerObject = GameObject.Find("Player").transform;
+            playerTransform = playerObject;
+        }
         transform.position = playerTransform.position;
     }
 
