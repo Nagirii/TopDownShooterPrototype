@@ -17372,6 +17372,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 1223071280}
   speed: 0.125
+  minX: -1.91
+  maxX: 1.24
+  minY: -4.36
+  maxY: 25.86
 --- !u!4 &2098060064
 Transform:
   m_ObjectHideFlags: 0
@@ -17380,7 +17384,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2098060062}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.8898962, y: 0.6580496, z: -0.38085938}
+  m_LocalPosition: {x: 1.24, y: 0.9, z: -0.38085938}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 519420032}
