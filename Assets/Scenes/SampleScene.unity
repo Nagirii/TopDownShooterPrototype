@@ -7681,6 +7681,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1223071280}
+  xPosition: -26.73
+  yPosition: 0.69
 --- !u!61 &932446350
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18220,6 +18222,11 @@ PrefabInstance:
       propertyPath: hearts.Array.data[4]
       value: 
       objectReference: {fileID: 529174092}
+    - target: {fileID: 79674741476570825, guid: a625379887582e441be46e199cf6cdf1,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a625379887582e441be46e199cf6cdf1, type: 3}
 --- !u!1001 &1021218548581805956
