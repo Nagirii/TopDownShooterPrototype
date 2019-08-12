@@ -7,6 +7,13 @@ public class spook : enemy
     public float stopDistance;
     private float attackTime;
 
+    private void Start()
+    {
+        if(player == null)
+        {
+            player = GameObject.Find("Player").transform;
+        }
+    }
 
     // Update is called once per frame
     void Update()

@@ -9,7 +9,10 @@ public class Ghoul : enemy
 
     void Start()
     {
-        
+       if(player == null)
+        {
+            player = GameObject.Find("Player").transform;
+        } 
     }
 
     // Update is called once per frame

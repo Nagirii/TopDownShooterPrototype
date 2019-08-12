@@ -18,8 +18,8 @@ public class CameraFollow : MonoBehaviour
        
         if (playerTransform == null)
         {
-            playerObject = GameObject.Find("Player").transform;
-            playerTransform = playerObject;
+            playerTransform = GameObject.Find("Player").transform;
+            
         }
         transform.position = playerTransform.position;
     }
