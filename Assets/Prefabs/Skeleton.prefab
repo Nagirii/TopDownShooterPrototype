@@ -984,8 +984,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 40
   player: {fileID: 0}
-  speed: 5
+  speed: 6
   timeBetweenAttacks: 2
   damage: 1
   attackSpeed: 3
+  chance: 15
+  roll: 0
+  drop: {fileID: 2364906367562094842, guid: 9060f54a8c4b9ab43b95d39751340f44, type: 3}
   stopDistance: 2.5

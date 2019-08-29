@@ -1,7 +1,9 @@
 fileFormatVersion: 2
-guid: 304162867a237c04a92ef4af1d9008c2
+guid: 15fa9b67ffdf7dd4b90464dce3bcff48
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: PILARES DO MEIO DA SALA_0
+    21300002: PILARES DO MEIO DA SALA_1
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -40,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -93,11 +95,51 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: PILARES DO MEIO DA SALA_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 45
+        width: 44
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec4d172619f60a4d9ba08bb9b4f8980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PILARES DO MEIO DA SALA_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 6
+        width: 44
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f58671736bba9844ca76d4e94a129908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 265eb9384a7854e4ab835beef2ada1cf
+    spriteID: 94e44be7c341fff41b58ebaa68da473e
     vertices: []
     indices: 
     edges: []

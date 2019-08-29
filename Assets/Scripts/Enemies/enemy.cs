@@ -10,11 +10,19 @@ public class enemy : MonoBehaviour
     public float timeBetweenAttacks;
     public int damage;
     public int attackSpeed;
+    public int chance;
+    public int roll;
+    public GameObject drop;
 
     public void TakeDamage(int damageAmount){
         health -= damageAmount;
         if(health <=0)
-        { 
+        {
+            roll = Random.Range(0, 100);
+            if (roll <= chance)
+            {
+                Instantiate(drop, transform.position, Quaternion.identity);
+            }
             Destroy(gameObject);
         }
     }

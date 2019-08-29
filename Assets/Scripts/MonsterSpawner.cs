@@ -7,19 +7,32 @@ public class MonsterSpawner : MonoBehaviour
     public GameObject monster;
     public Transform spawnPoint;
     public int spawnNumber;
-    public float waitTime= 3f;
+    public float spawnTime;
+    public float spawnDelay;
+    public bool stopSpawning = false;
+    public int count;
+    public int maxSpawn;
+
     
     private void Start(){
-        StartCoroutine(Spawn());
+        InvokeRepeating("Spawn", spawnTime, spawnDelay);
     }
 
-    IEnumerator Spawn(){
-        while (true)
+    public void Spawn()
+    {
+        for (int i = 0; i < spawnNumber; i++)
         {
-            yield return new WaitForSeconds(waitTime);
-            for(int i=0; i<spawnNumber; i++) {
-                Instantiate(monster, spawnPoint.position, Quaternion.identity);
+            Instantiate(monster, spawnPoint.position, Quaternion.identity);
+            count = count + 1;
+            if(count >= maxSpawn)
+            {
+                stopSpawning = true;
             }
+            if (stopSpawning == true)
+            {
+                CancelInvoke("Spawn");
+            }
+
         }
     }
     
