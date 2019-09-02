@@ -992,3 +992,4 @@ MonoBehaviour:
   roll: 0
   drop: {fileID: 2364906367562094842, guid: 9060f54a8c4b9ab43b95d39751340f44, type: 3}
   stopDistance: 2.5
+  rocambole: {fileID: 0}

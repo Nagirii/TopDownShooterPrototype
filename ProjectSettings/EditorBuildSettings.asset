@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Claraboia.unity
     guid: d84fe810dec08124683e8632a383ca9a
+  - enabled: 1
+    path: Assets/Scenes/Title.unity
+    guid: 40b03b94058e62a44afda2256fa05ecf
+  - enabled: 1
+    path: Assets/Scenes/MaisEmbaixo.unity
+    guid: d97badcad1585da438297b20aa7a2400
   m_configObjects: {}

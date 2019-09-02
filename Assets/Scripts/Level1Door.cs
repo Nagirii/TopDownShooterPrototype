@@ -3,28 +3,34 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class EntraNaClaraboia : MonoBehaviour
+public class Level1Door : MonoBehaviour
 {
-    bool playerContact;
+    bool playerContact = false;
     public Transform target;
     public float xPosition;
     public float yPosition;
-    public Transform playerObject;
     GameObject[] spookTargets;
+    GameObject player;
+    Player rocambole;
+    public Transform playerObject;
+
+    
 
     private void Start()
     {
+        StartCoroutine("ChupaMeuPiru");
+        player = GameObject.Find("Player");
+        rocambole = player.GetComponent<Player>();
         if (playerObject == null)
         {
             playerObject = GameObject.Find("Player").transform;
             target = playerObject;
         }
     }
-
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("e") && playerContact == true)
+        if (Input.GetKeyDown("e") && playerContact == true && rocambole.keyCount >= 3)
         {
             DontDestroyOnLoad(target.gameObject);
             target.position = new Vector3(xPosition, yPosition, 0);
@@ -33,7 +39,9 @@ public class EntraNaClaraboia : MonoBehaviour
             {
                 Destroy(spookTargets[i].gameObject);
             }
-            SceneManager.LoadScene("Claraboia");
+            rocambole.keyCount = 0;
+            rocambole.UpdateKeyUI(rocambole.keyCount);
+            SceneManager.LoadScene("MaisEmbaixo");
         }
 
 
@@ -45,6 +53,7 @@ public class EntraNaClaraboia : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            collision.GetComponent<Player>();
             playerContact = true;
         }
     }
@@ -61,5 +70,9 @@ public class EntraNaClaraboia : MonoBehaviour
     public void LoadScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
+    }
+    IEnumerator ChupaMeuPiru()
+    {
+        yield return new WaitForSeconds(3f);
     }
 }

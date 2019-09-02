@@ -42,7 +42,7 @@ public class RoomScript : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            StartCoroutine(bazinga());
+           
             for (int i=0; i<enemyAmount; i++)
             {
                 Spawn();
@@ -65,11 +65,7 @@ public class RoomScript : MonoBehaviour
             col.enabled = false;
         }
     }
-    public IEnumerator bazinga()
-    {
-        float waitTime = 1.5f;
-        yield return new WaitForSeconds(waitTime);
-    }
+ 
 
 }
 

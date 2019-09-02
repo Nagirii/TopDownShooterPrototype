@@ -11,12 +11,19 @@ public class Player : MonoBehaviour
     private Vector2 moveAmount;
     public int health;
 
+    public Image[] keys;
+    public Sprite fullKey;
+    public Sprite emptyKey;
+    public int keyCount;
+
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
 
     private SpriteRenderer rend;
     private Color c;
+
+    public GameObject panel;
 
     public bool isInvulnerable = false;
 
@@ -83,6 +90,21 @@ public class Player : MonoBehaviour
             }
         }
     }
+
+    public void UpdateKeyUI(int currentKeys)
+    {
+        for (int i=0; i<keys.Length; i++)
+        {
+            if (i < currentKeys)
+            {
+                keys[i].sprite = fullKey;
+            }
+            else
+            {
+                keys[i].sprite = emptyKey;
+            }
+        }
+    }
     public void IncreaseHealth(int heal)
     {
         health = health + heal;
@@ -91,6 +113,11 @@ public class Player : MonoBehaviour
             health = 5;
         }
         UpdateHealthUI(health);
+    }
+    public void IncreaseKeys()
+    {
+        keyCount = keyCount + 1;
+        UpdateKeyUI(keyCount);
     }
 
     IEnumerator ParaDeBater()
@@ -106,5 +133,8 @@ public class Player : MonoBehaviour
         rend.material.color = c;
     }
 
-
+    public void VictoryPanel()
+    {
+        panel.SetActive(true);
+    }
     }
