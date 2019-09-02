@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2725488531309511370}
   - component: {fileID: 2725488531309511371}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Low R leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2725488531537402516}
   - component: {fileID: 2725488531537402517}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: High L arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2725488531730200409}
   - component: {fileID: 2725488531730200410}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: High body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -251,7 +251,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2725488531809103772}
   - component: {fileID: 2725488531809103773}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: High R leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -330,7 +330,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2725488532040176321}
   - component: {fileID: 2725488532040176322}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Low R arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -409,7 +409,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2725488532194192914}
   - component: {fileID: 2725488532194192915}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Low L leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -488,7 +488,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2725488532218319941}
   - component: {fileID: 2725488532218319942}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: High L Leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -567,7 +567,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2725488532347753392}
   - component: {fileID: 2725488532347753393}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -646,7 +646,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2725488532632531150}
   - component: {fileID: 2725488532632531151}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Low L arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -725,7 +725,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2725488532763625696}
   - component: {fileID: 2725488532763625697}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Low body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -804,7 +804,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2725488533000351291}
   - component: {fileID: 2725488533000351292}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: High R arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -887,7 +887,7 @@ GameObject:
   - component: {fileID: 2725488533384896970}
   - component: {fileID: 2725488533384896969}
   - component: {fileID: 2725488533384896971}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Skeleton
   m_TagString: Enemy
   m_Icon: {fileID: 0}

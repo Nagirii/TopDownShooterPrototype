@@ -6,12 +6,14 @@ public class Ghoul : enemy
 {
     public float stopDistance;
     private float attackTime;
+    public Player rocambole;
 
     private void Start()
     {
         if (player == null)
         {
             player = GameObject.Find("Player").transform;
+            rocambole = player.gameObject.GetComponent<Player>();
         }
     }
 
@@ -20,13 +22,14 @@ public class Ghoul : enemy
     {
         if (player != null)
         {
+            
             if (Vector2.Distance(transform.position, player.position) > stopDistance)
             {
                 transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
             }
             else
             {
-                if (Time.time >= attackTime)
+                if (Time.time >= attackTime && rocambole.isInvulnerable == false)
                 {
                     StartCoroutine(Attack());
                     attackTime = Time.time + timeBetweenAttacks;

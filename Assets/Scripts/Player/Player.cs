@@ -14,11 +14,19 @@ public class Player : MonoBehaviour
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
+
+    private SpriteRenderer rend;
+    private Color c;
+
+    public bool isInvulnerable = false;
+
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        rend = GetComponent<SpriteRenderer>();
+        c = rend.material.color;
         
     }
 
@@ -48,6 +56,11 @@ public class Player : MonoBehaviour
         UpdateHealthUI(health);
         if(health<=0){
             Destroy(this.gameObject);
+        }
+        else
+        {
+            StartCoroutine("ParaDeBater");
+
         }
     }
     public void ChangeWeapons(Weapon weaponToEquip){
@@ -79,6 +92,19 @@ public class Player : MonoBehaviour
         }
         UpdateHealthUI(health);
     }
-    
 
-}
+    IEnumerator ParaDeBater()
+    {
+        isInvulnerable = true;
+        Physics2D.IgnoreLayerCollision(9, 10, true);
+        c.a = (0.5f);
+        rend.material.color = c;
+        yield return new WaitForSeconds(2f);
+        isInvulnerable = false;
+        Physics2D.IgnoreLayerCollision(9, 10, false);
+        c.a = (1f);
+        rend.material.color = c;
+    }
+
+
+    }
