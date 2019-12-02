@@ -16505,5 +16505,20 @@ PrefabInstance:
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1021218548220401659, guid: 5699931b6a79d3c4283f67d3145a16ff,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1021218548220401659, guid: 5699931b6a79d3c4283f67d3145a16ff,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1021218548220401659, guid: 5699931b6a79d3c4283f67d3145a16ff,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5699931b6a79d3c4283f67d3145a16ff, type: 3}
