@@ -13,7 +13,7 @@ public class ChutaPorta : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("e") && playerContact == true)
+        if (Input.GetKeyDown("space") && playerContact == true)
         {
             DontDestroyOnLoad(target.gameObject);
             target.position = new Vector3(xPosition, yPosition, 0);
